@@ -92,24 +92,51 @@ link = ""
   Zhihu = "shen-yi-sheng-28"
   RSS = true
 
-[params.page.comment]
-  # giscus comment 评论系统设置 (https://giscus.app/zh-CN)
-  [params.page.comment.giscus]
-  # 你可以参考官方文档来使用下列配置
-  enable = true
-  repo = "googlc/googlc.github.io"
-  repoId = "R_kgDOIBaciA"
-  category = "Announcements"
-  categoryId = "DIC_kwDOIBaciM4CRgnK"
-  # 为空时自动适配当前主题 i18n 配置
-  lang = "zh-CN"
-  mapping = "pathname"
-  reactionsEnabled = "1"
-  emitMetadata = "0"
-  inputPosition = "bottom"
-  lazyLoading = false
-  lightTheme = "light"
-  darkTheme = "dark"
+[params.giscus]
+  data-repo="googlc/googlc.github.io"
+  data-repo-id="R_kgDOIBaciA"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOIBaciM4CRgnK"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="zh-CN"
+  data-loading="lazy"
+  crossorigin="anonymous"
+#[params.page.comment]
+#  # giscus comment 评论系统设置 (https://giscus.app/zh-CN)
+#  [params.page.comment.giscus]
+#  data-repo="googlc/googlc.github.io"
+#  data-repo-id="R_kgDOIBaciA"
+#  data-category="Announcements"
+#  data-category-id="DIC_kwDOIBaciM4CRgnK"
+#  data-mapping="pathname"
+#  data-strict="0"
+#  data-reactions-enabled="1"
+#  data-emit-metadata="0"
+#  data-input-position="bottom"
+#  data-theme="preferred_color_scheme"
+#  data-lang="zh-CN"
+#  data-loading="lazy"
+#  crossorigin="anonymous"
+#  # 你可以参考官方文档来使用下列配置
+#  enable = true
+#  repo = "googlc/googlc.github.io"
+#  repoId = "R_kgDOIBaciA"
+#  category = "Announcements"
+#  categoryId = "DIC_kwDOIBaciM4CRgnK"
+#  # 为空时自动适配当前主题 i18n 配置
+#  lang = "zh-CN"
+#  mapping = "pathname"
+#  reactionsEnabled = "1"
+#  emitMetadata = "0"
+#  inputPosition = "bottom"
+#  lazyLoading = false
+#  lightTheme = "light"
+#  darkTheme = "dark"
 #[params.cdn]
 #  # CDN 数据文件名称, 默认不启用
 #  # ["jsdelivr.yml"]
