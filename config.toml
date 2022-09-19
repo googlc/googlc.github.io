@@ -6,7 +6,7 @@ languageCode = 'en-us'
 languageName = "English"
 title = 'LAST'
 theme = 'LoveIt'
-
+description = "Wel Goo!"
 
 
 hasCJKLanguage = true
@@ -87,56 +87,114 @@ link = ""
 
 
 
-[params.social]
-  GitHub = "googlc"
-  Zhihu = "shen-yi-sheng-28"
-  RSS = true
 
-[params.giscus]
-  data_repo="googlc/googlc.github.io"
-  data_repo-id="R_kgDOIBaciA"
-  data_category="Announcements"
-  data_category-id="DIC_kwDOIBaciM4CRgnK"
-  data_mapping="pathname"
-  data_strict="0"
-  data_reactions-enabled="1"
-  data_emit-metadata="0"
-  data_input-position="bottom"
-  data_theme="preferred_color_scheme"
-  data_lang="zh-CN"
-  data_loading="lazy"
-  crossorigin="anonymous"
-#[params.page.comment]
-#  # giscus comment 评论系统设置 (https://giscus.app/zh-CN)
-#  [params.page.comment.giscus]
-#  data-repo="googlc/googlc.github.io"
-#  data-repo-id="R_kgDOIBaciA"
-#  data-category="Announcements"
-#  data-category-id="DIC_kwDOIBaciM4CRgnK"
-#  data-mapping="pathname"
-#  data-strict="0"
-#  data-reactions-enabled="1"
-#  data-emit-metadata="0"
-#  data-input-position="bottom"
-#  data-theme="preferred_color_scheme"
-#  data-lang="zh-CN"
-#  data-loading="lazy"
-#  crossorigin="anonymous"
-#  # 你可以参考官方文档来使用下列配置
-#  enable = true
-#  repo = "googlc/googlc.github.io"
-#  repoId = "R_kgDOIBaciA"
-#  category = "Announcements"
-#  categoryId = "DIC_kwDOIBaciM4CRgnK"
-#  # 为空时自动适配当前主题 i18n 配置
-#  lang = "zh-CN"
-#  mapping = "pathname"
-#  reactionsEnabled = "1"
-#  emitMetadata = "0"
-#  inputPosition = "bottom"
-#  lazyLoading = false
-#  lightTheme = "light"
-#  darkTheme = "dark"
+[params]
+  defaultTheme = "auto"
+  gitRepo = ""
+  title = "Goo"
+  description = "Wel Goo!"
+  [params.social]
+    GitHub = "googlc"
+    Zhihu = "shen-yi-sheng-28"
+    RSS = true
+
+  [params.search]
+    enable = true
+    # 搜索引擎的类型 ["lunr", "algolia"]
+    type = "lunr"
+    # 文章内容最长索引长度
+    contentLength = 4000
+    # 搜索框的占位提示语
+    placeholder = ""
+    # LoveIt 新增 | 0.2.1 最大结果数目
+    maxResultLength = 10
+    # LoveIt 新增 | 0.2.3 结果内容片段长度
+    snippetLength = 50
+    # LoveIt 新增 | 0.2.1 搜索结果中高亮部分的 HTML 标签
+    highlightTag = "em"
+    # LoveIt 新增 | 0.2.4 是否在搜索索引中使用基于 baseURL 的绝对路径
+    absoluteURL = false
+    [params.search.algolia]
+    index = ""
+    appID = ""
+    searchKey = ""
+  [params.header]
+    logo = ""
+    # 标题名称
+    name = "test"
+    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+    pre = ""
+    #是否为标题显示打字机动画
+    typeit = false
+  [params.page.code]
+    # 是否显示代码块的复制按钮
+    copy = true
+    # 默认展开显示的代码行数
+    maxShownLines = 50
+  [params.giscus]
+    data_repo="googlc/googlc.github.io"
+    data_repo-id="R_kgDOIBaciA"
+    data_category="Announcements"
+    data_category-id="DIC_kwDOIBaciM4CRgnK"
+    data_mapping="pathname"
+    data_strict="0"
+    data_reactions-enabled="1"
+    data_emit-metadata="0"
+    data_input-position="bottom"
+    data_theme="preferred_color_scheme"
+    data_lang="zh-CN"
+    data_loading="lazy"
+    crossorigin="anonymous"
+
+  [params.page.comment]
+    enable = true
+    [params.page.comment.giscus]
+      enable = true
+    # 11111
+#      repo = ""
+#      repoId = ""
+#      category = "Announcements"
+#      categoryId = ""
+#      # 为空时自动适配当前主题 i18n 配置
+#      lang = ""
+#      mapping = "pathname"
+#      reactionsEnabled = "1"
+#      emitMetadata = "0"
+#      inputPosition = "bottom"
+#      lazyLoading = false
+#      lightTheme = "light"
+#      darkTheme = "dark"
+    # 2222
+    # 你可以参考官方文档来使用下列配置
+      data-repo="googlc/googlc.github.io"
+      data-repo-id="R_kgDOIBaciA"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOIBaciM4CRgnK"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="preferred_color_scheme"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+# 3333
+
+#      data_repo="googlc/googlc.github.io"
+#      data_repo-id="R_kgDOIBaciA"
+#      data_category="Announcements"
+#      data_category-id="DIC_kwDOIBaciM4CRgnK"
+#      data_mapping="pathname"
+#      data_strict="0"
+#      data_reactions-enabled="1"
+#      data_emit-metadata="0"
+#      data_input-position="bottom"
+#      data_theme="preferred_color_scheme"
+#      data_lang="zh-CN"
+#      data_loading="lazy"
+#      crossorigin="anonymous"
+
 #[params.cdn]
 #  # CDN 数据文件名称, 默认不启用
 #  # ["jsdelivr.yml"]
