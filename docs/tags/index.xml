@@ -1,8 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Tags - Tag - LAST</title>
-        <link>https://googlc.github.io/tags/</link>
-        <description>Tags - Tag - LAST</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>lingong@mail.com ( )</managingEditor>
-            <webMaster>lingong@mail.com ( )</webMaster><atom:link href="https://googlc.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
-</rss>
