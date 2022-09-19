@@ -131,54 +131,40 @@ link = ""
     copy = true
     # 默认展开显示的代码行数
     maxShownLines = 50
-  [params.giscus]
-    data_repo="googlc/googlc.github.io"
-    data_repo-id="R_kgDOIBaciA"
-    data_category="Announcements"
-    data_category-id="DIC_kwDOIBaciM4CRgnK"
-    data_mapping="pathname"
-    data_strict="0"
-    data_reactions-enabled="1"
-    data_emit-metadata="0"
-    data_input-position="bottom"
-    data_theme="preferred_color_scheme"
-    data_lang="zh-CN"
-    data_loading="lazy"
-    crossorigin="anonymous"
 
   [params.page.comment]
     enable = true
     [params.page.comment.giscus]
       enable = true
     # 11111
-#      repo = ""
-#      repoId = ""
-#      category = "Announcements"
-#      categoryId = ""
-#      # 为空时自动适配当前主题 i18n 配置
-#      lang = ""
-#      mapping = "pathname"
-#      reactionsEnabled = "1"
-#      emitMetadata = "0"
-#      inputPosition = "bottom"
-#      lazyLoading = false
-#      lightTheme = "light"
-#      darkTheme = "dark"
+      repo = "googlc/googlc.github.io"
+      repoId = "R_kgDOIBaciA"
+      category = "Announcements"
+      categoryId = "DIC_kwDOIBaciM4CRgnK"
+      # 为空时自动适配当前主题 i18n 配置
+      lang = "zh-CN"
+      mapping = "pathname"
+      reactionsEnabled = "1"
+      emitMetadata = "0"
+      inputPosition = "bottom"
+      lazyLoading = false
+      lightTheme = "light"
+      darkTheme = "dark"
     # 2222
     # 你可以参考官方文档来使用下列配置
-      data-repo="googlc/googlc.github.io"
-      data-repo-id="R_kgDOIBaciA"
-      data-category="Announcements"
-      data-category-id="DIC_kwDOIBaciM4CRgnK"
-      data-mapping="pathname"
-      data-strict="0"
-      data-reactions-enabled="1"
-      data-emit-metadata="0"
-      data-input-position="bottom"
-      data-theme="preferred_color_scheme"
-      data-lang="zh-CN"
-      data-loading="lazy"
-      crossorigin="anonymous"
+#      data-repo="googlc/googlc.github.io"
+#      data-repo-id="R_kgDOIBaciA"
+#      data-category="Announcements"
+#      data-category-id="DIC_kwDOIBaciM4CRgnK"
+#      data-mapping="pathname"
+#      data-strict="0"
+#      data-reactions-enabled="1"
+#      data-emit-metadata="0"
+#      data-input-position="bottom"
+#      data-theme="preferred_color_scheme"
+#      data-lang="zh-CN"
+#      data-loading="lazy"
+#      crossorigin="anonymous"
 # 3333
 
 #      data_repo="googlc/googlc.github.io"
