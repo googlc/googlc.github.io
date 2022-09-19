@@ -1,3 +1,5 @@
+publishDir = 'docs'
+
 # https://hugoloveit.com/zh-cn/theme-documentation-basics/
 baseURL = 'https://googlc.github.io'
 languageCode = 'en-us'
