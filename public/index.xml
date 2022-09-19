@@ -4,9 +4,17 @@
         <link>https://googlc.github.io/</link>
         <description>Wel Goo!</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>lingong@mail.com ( )</managingEditor>
-            <webMaster>lingong@mail.com ( )</webMaster><lastBuildDate>Sun, 19 Jun 2022 15:13:49 &#43;0800</lastBuildDate>
+            <webMaster>lingong@mail.com ( )</webMaster><lastBuildDate>Mon, 19 Sep 2022 16:49:51 &#43;0800</lastBuildDate>
             <atom:link href="https://googlc.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Test3</title>
+    <link>https://googlc.github.io/posts/test3/</link>
+    <pubDate>Mon, 19 Sep 2022 16:49:51 &#43;0800</pubDate>
+    <author> </author>
+    <guid>https://googlc.github.io/posts/test3/</guid>
+    <description><![CDATA[why no comments? why no comments? print(hello) why no comments?why no comments?why no comments?why no comments?why no comments? why no comments?why no comments? why no comments?]]></description>
+</item>
+<item>
     <title>Todo2</title>
     <link>https://googlc.github.io/posts/test2/</link>
     <pubDate>Sun, 19 Jun 2022 15:13:49 &#43;0800</pubDate>
