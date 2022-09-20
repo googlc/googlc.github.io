@@ -44,7 +44,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # Author config
 # 作者配置
 [author]
-  name = "xxxx"
+  name = ""
   email = ""
   link = ""
 
@@ -99,7 +99,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
   # 网站标题, 用于 Open Graph 和 Twitter Cards
-  title = "GOO"
+  title = "GOOGLC"
   # website description for RSS, SEO, Open Graph and Twitter Cards
   # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
   description = "nothing to lose"
@@ -124,7 +124,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       logo = ""
       # title name
       # 标题名称
-      name = "GOO"
+      name = "GOOGLC"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
@@ -192,7 +192,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-    title = "GOO"
+    title = "GOOGLC"
     # whether to omit favicon resource links
     # 是否隐藏网站图标资源链接
     noFavicon = false
@@ -623,10 +623,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     lineNos = true
     lineNumbersInTable = true
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
-    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
   # Goldmark is from Hugo 0.60 the default library used for Markdown
-  # Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
@@ -749,7 +747,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
         post = ""
         name = ""
-        url = "https://github.com/dillonzq/LoveIt"
+        url = "https://github.com/googlc/distributed-consensus-reading-list"
         title = "GitHub"
     [languages.en.params]
       [languages.en.params.search]
@@ -777,14 +775,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           social = true
           disclaimer = ""
       [languages.en.params.social]
-        GitHub = "xxxx"
-        Twitter = "xxxx"
-        Instagram = "xxxx"
-        Facebook = "xxxx"
+        GitHub = "googlc"
+        Zhihu = "shen-yi-sheng-28"
+        Email = "getchagood@qq.com"
+        Twitter = ""
+        Instagram = ""
+        Facebook = ""
         Telegram = "xxxx"
-        Youtubelegacy = "xxxx"
+        Youtubelegacy = ""
         Phone = "555-555-555"
-        Email = "xxxx@xxxx.com"
         RSS = true
         [languages.en.params.social.Mastodon]
           id = "@xxxx"
