@@ -1,11 +1,18 @@
-<urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml"
-    ><url>
-            <loc>https://googlc.github.io/</loc><lastmod>2022-09-19T16:49:51&#43;08:00</lastmod></url><url>
-            <loc>https://googlc.github.io/posts/</loc><lastmod>2022-09-19T16:49:51&#43;08:00</lastmod></url><url>
-            <loc>https://googlc.github.io/posts/test3/</loc><lastmod>2022-09-19T16:49:51&#43;08:00</lastmod></url><url>
-            <loc>https://googlc.github.io/posts/test2/</loc><lastmod>2022-06-19T15:13:49&#43;08:00</lastmod></url><url>
-            <loc>https://googlc.github.io/posts/tinykv_white_paper-/</loc><lastmod>2022-03-19T14:35:14&#43;08:00</lastmod></url><url>
-            <loc>https://googlc.github.io/categories/</loc></url><url>
-            <loc>https://googlc.github.io/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://googlc.github.io/en/sitemap.xml</loc>
+    
+      <lastmod>2022-09-20T15:20:06+08:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://googlc.github.io/zh-cn/sitemap.xml</loc>
+    
+      <lastmod>2022-09-20T15:20:06+08:00</lastmod>
+    
+  </sitemap>
+  
+</sitemapindex>

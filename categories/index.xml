@@ -1,8 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Categories - Category - LAST</title>
-        <link>https://googlc.github.io/categories/</link>
-        <description>Categories - Category - LAST</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>lingong@mail.com ( )</managingEditor>
-            <webMaster>lingong@mail.com ( )</webMaster><atom:link href="https://googlc.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
-</rss>
