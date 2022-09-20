@@ -3,7 +3,6 @@ baseURL = 'https://googlc.github.io'
 title = 'GOOGLC'
 theme = 'LoveIt'
 description = "FooFoo!"
-#themesDir = "../.."
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 # 设置默认的语言 ["en", "zh-cn", "fr", "pl", ...]
