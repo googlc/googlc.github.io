@@ -11,33 +11,6 @@
                     hreflang="en"
                     href="https://googlc.github.io/theme-documentation-basics/"
                     /></url><url>
-            <loc>https://googlc.github.io/theme-documentation-content/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/theme-documentation-content/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/theme-documentation-content/"
-                    /></url><url>
-            <loc>https://googlc.github.io/theme-documentation-built-in-shortcodes/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/theme-documentation-built-in-shortcodes/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/theme-documentation-built-in-shortcodes/"
-                    /></url><url>
-            <loc>https://googlc.github.io/theme-documentation-extended-shortcodes/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/theme-documentation-extended-shortcodes/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/theme-documentation-extended-shortcodes/"
-                    /></url><url>
             <loc>https://googlc.github.io/basic-markdown-syntax/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -46,15 +19,6 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://googlc.github.io/basic-markdown-syntax/"
-                    /></url><url>
-            <loc>https://googlc.github.io/theme-documentation-mermaid-shortcode/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/theme-documentation-mermaid-shortcode/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/theme-documentation-mermaid-shortcode/"
                     /></url><url>
             <loc>https://googlc.github.io/emoji-support/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
@@ -65,33 +29,6 @@
                     hreflang="en"
                     href="https://googlc.github.io/emoji-support/"
                     /></url><url>
-            <loc>https://googlc.github.io/theme-documentation-echarts-shortcode/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/theme-documentation-echarts-shortcode/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/theme-documentation-echarts-shortcode/"
-                    /></url><url>
-            <loc>https://googlc.github.io/theme-documentation-mapbox-shortcode/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/theme-documentation-mapbox-shortcode/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/theme-documentation-mapbox-shortcode/"
-                    /></url><url>
-            <loc>https://googlc.github.io/theme-documentation-music-shortcode/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/theme-documentation-music-shortcode/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/theme-documentation-music-shortcode/"
-                    /></url><url>
             <loc>https://googlc.github.io/theme-documentation-bilibili-shortcode/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -100,15 +37,6 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://googlc.github.io/theme-documentation-bilibili-shortcode/"
-                    /></url><url>
-            <loc>https://googlc.github.io/theme-documentation-typeit-shortcode/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/theme-documentation-typeit-shortcode/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/theme-documentation-typeit-shortcode/"
                     /></url><url>
             <loc>https://googlc.github.io/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
@@ -167,24 +95,6 @@
                     hreflang="en"
                     href="https://googlc.github.io/tags/"
                     /></url><url>
-            <loc>https://googlc.github.io/tags/content/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/tags/content/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/tags/content/"
-                    /></url><url>
-            <loc>https://googlc.github.io/tags/markdown/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/tags/markdown/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/tags/markdown/"
-                    /></url><url>
             <loc>https://googlc.github.io/tags/shortcodes/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -202,6 +112,15 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://googlc.github.io/tags/html/"
+                    /></url><url>
+            <loc>https://googlc.github.io/tags/markdown/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://googlc.github.io/zh-cn/tags/markdown/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://googlc.github.io/tags/markdown/"
                     /></url><url>
             <loc>https://googlc.github.io/categories/markdown/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
