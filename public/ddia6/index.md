@@ -1,25 +1,5 @@
----
-weight: 1
-title: "DDIA-5"
-date: 2022-09-19T16:49:51+08:00
-lastmod: 2020-03-06T21:40:32+08:00
-draft: false
-author: ""
-authorLink: "https://github.com"
-description: "数据密集型系统应用第五章速记"
-images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+# DDIA-6
 
-tags: ["ddia", "database"]
-categories: ["分布式学习"]
-
-lightgallery: true
-
-toc:
-auto: false
----
 
 >复制意味着在通过网络连接的多台机器上保留相同数据的副本。
 
@@ -41,7 +21,7 @@ auto: false
 
 ### 有主的复制
 ---
-![img.png](img.png) 
+![img.png](images/img.png)
 
 **同步复制：**
 数据发送后持久化才返回
@@ -113,7 +93,7 @@ All in all:
 #### 单调读（monotonic reads）
 - 多次读取只会读到比以前新的版本，但不保证为最新版本
 - 强一致性< mr <最终一致性
-![img_2.png](img_2.png)
+  ![img_2.png](img_2.png)
 
 
 #### 前缀一致读（consistent prefix reads）
@@ -132,5 +112,7 @@ All in all:
 
 ### 无主复制
 ==//todo==
+
+![Basic configuration preview](basic-configuration-preview.png "Basic configuration preview")
 
 

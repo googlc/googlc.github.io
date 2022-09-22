@@ -21,7 +21,7 @@
 
 ### 有主的复制
 ---
-![img.png](img.png)
+![img.png](img.png) 
 
 **同步复制：**
 数据发送后持久化才返回
@@ -85,7 +85,7 @@ All in all:
 
 #### 读本节点的写入
 ![img_1.png](img_1.png)
-**read-your-writes consistency（写后读一致性）**：单个用户重新读取数据总会看到自己提交的任何更新，但不保证其他用户能看到此用户的更新
+**read-your-writes consistency（写后读一致性）**：如果用户重新加载页面，他们总会看到他们自己提交的任何更新。不对其他用户做出承诺
 
 有主复制系统如何实现“写后读一致性”？
 
@@ -93,7 +93,7 @@ All in all:
 #### 单调读（monotonic reads）
 - 多次读取只会读到比以前新的版本，但不保证为最新版本
 - 强一致性< mr <最终一致性
-  ![img_2.png](img_2.png)
+![img_2.png](img_2.png)
 
 
 #### 前缀一致读（consistent prefix reads）

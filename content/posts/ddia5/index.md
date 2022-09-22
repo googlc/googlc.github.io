@@ -1,5 +1,25 @@
-# DDIA-5
+---
+weight: 1
+title: "DDIA-5"
+date: 2022-09-19T16:49:51+08:00
+lastmod: 2020-03-06T21:40:32+08:00
+draft: false
+author: "goo"
+authorLink: "https://github.com"
+description: "数据密集型系统应用第五章速记"
+images: []
+resources:
+- name: "featured-image"
+  src: "featured-image.jpg"
 
+tags: ["ddia", "database"]
+categories: ["分布式学习"]
+
+lightgallery: true
+
+toc:
+auto: false
+---
 
 >复制意味着在通过网络连接的多台机器上保留相同数据的副本。
 
@@ -21,7 +41,7 @@
 
 ### 有主的复制
 ---
-![img.png](img.png)
+![2](img.png)
 
 **同步复制：**
 数据发送后持久化才返回
@@ -84,7 +104,7 @@ All in all:
 多节点之间异步复制时造成的不同节点之间的数据不一致。
 
 #### 读本节点的写入
-![img_1.png](img_1.png)
+![2](img_1.png)
 **read-your-writes consistency（写后读一致性）**：单个用户重新读取数据总会看到自己提交的任何更新，但不保证其他用户能看到此用户的更新
 
 有主复制系统如何实现“写后读一致性”？
@@ -112,6 +132,5 @@ All in all:
 
 ### 无主复制
 ==//todo==
-
 
 
