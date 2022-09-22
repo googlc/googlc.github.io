@@ -49,7 +49,7 @@
             <a href="/" title="GOOGLC"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>GOOGLC</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/categories/documentation/"> Docs </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/googlc/distributed-consensus-reading-list" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/googlc/distributed-consensus-reading-list" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
                             <i class="fas fa-search fa-fw" aria-hidden="true"></i>
@@ -94,7 +94,7 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         Cancel
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/categories/documentation/" title="">Docs</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/googlc/distributed-consensus-reading-list" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/googlc/distributed-consensus-reading-list" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
                     <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
@@ -115,7 +115,30 @@
         data-sizes="auto"
         alt="/images/avatar.png"
         title="/images/avatar.png" width="528" height="560" /></a></div><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/googlc" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a><a href="https://t.me/xxxx" title="Telegram" target="_blank" rel="noopener noreffer me"><i class="fab fa-telegram-plane fa-fw" aria-hidden="true"></i></a><a href="https://www.zhihu.com/people/shen-yi-sheng-28" title="知乎" target="_blank" rel="noopener noreffer me"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/zhihu.svg" aria-hidden="true"></i></a><a href="https://mastodon.technology/@xxxx" title="Mastodon" target="_blank" rel="noopener noreffer me"><i class="fab fa-mastodon fa-fw" aria-hidden="true"></i></a><a href="tel:555-555-555" title="Phone" rel="me"><i class="fas fa-phone fa-fw" aria-hidden="true"></i></a><a href="mailto:getchagood@qq.com" title="Email" rel="me"><i class="far fa-envelope fa-fw" aria-hidden="true"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw" aria-hidden="true"></i></a></div></div>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/ddia5/">DDIA-5</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://github.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-19">2022-09-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%A6%E4%B9%A0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>分布式学习</a></span></div><div class="content">复制意味着在通过网络连接的多台机器上保留相同数据的副本。
+复制的动机：
+使数据离用户更近-&gt;减少延迟 容错-&gt;提高可用性 横向、纵向扩展方便-&gt;提高吞吐量 复制的难点： 多份数据的一致性-&gt;即数据会变更，如何让多节点数据一致
+复制的方式：
+单主 无主 多主 权衡：使用同步复制还是异步复制？如何处理失败的副本？
+有主的复制 同步复制： 数据发送后持久化才返回
+优点：从库能保证有与主库一致的最新数据副本 缺点： 从库无响应会导致主库无法处理写入 半同步（semi-synchronous: 一个从库是同步的，而其他的从库则是异步的
+异步复制： 数据不保证在副本上落盘
+优点：低延迟 缺点：一致性不强 成员变更-新增从节点 流程：
+在某个时刻获取主库的一致性快照（如果可能，不必锁定整个数据库）。大多数数据库都具有这个功能，因为它是备份必需的。对于某些场景，可能需要第三方工具，例如用于 MySQL 的 innobackupex 将快照复制到新的从库节点。 1从库连接到主库，并拉取快照之后发生的所有数据变更。这要求快照与主库复制日志中的位置精确关联。该位置有不同的名称，例如 PostgreSQL 将其称为 日志序列号（log sequence number，LSN），MySQL 将其称为 二进制日志坐标（binlog coordinates）。 当从库处理完快照之后积累的数据变更，我们就说它 赶上（caught up） 了主库，现在它可以继续及时处理主库产生的数据变化了。 处理节点失效 从库失效-&gt;catch up
+主库失效-&gt;故障切换
+确认主库失效。 选一个新的主库 重新配置系统以启用新的主库 故障切换的难点：
+存在旧主的已提交未提交的数据如何处理？ 新主的数据是否正确 主库被宣告死亡之前的正确超时应该怎么配置？在主库失效的情况下，超时时间越长意味着恢复时间也越长。但是如果超时设置太短，又可能会出现不必要的故障切换。例如，临时的负载峰值可能导致节点的响应时间增加到超出超时时间，或者网络故障也可能导致数据包延迟。如果系统已经处于高负载或网络问题的困扰之中，那么不必要的故障切换可能会让情况变得更糟糕。 单主集群出现脑裂，却没有多主集群的冲突处理机制 屏障（fencing） 爆彼之头（Shoot The Other Node In The Head, STONITH） 我们将在 “领导者和锁” 中对屏障进行详细讨论。
+All in all: 节点故障、不可靠的网络、对副本一致性、持久性、可用性和延迟的权衡，这些问题实际上是分布式系统中的基本问题。</div><div class="post-footer">
+        <a href="/ddia5/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ddia/">ddia</a>,&nbsp;<a href="/tags/database/">database</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/test3/">Test3</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://dillonzq.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dillon</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-19">2022-09-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%A6%E4%B9%A0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>分布式学习</a></span></div><div class="content">why no comments? 1 why no comments? 1 print(hello) why no comments?why no comments?why no comments?why no comments?why no comments? why no comments?why no comments? why no comments?</div><div class="post-footer">
+        <a href="/test3/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ddia/">ddia</a>,&nbsp;<a href="/tags/database/">database</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/theme-documentation-basics/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -157,10 +180,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="https://dillonzq.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dillon</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-10-01">2019-10-01</time></span>&nbsp;<span class="post-category">included in <a href="/categories/markdown/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Markdown</a></span></div><div class="content"><p>Emoji can be enabled in a Hugo project in a number of ways.</p></div><div class="post-footer">
         <a href="/emoji-support/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/emoji/">emoji</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/test3/">Test3</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-19">2022-09-19</time></span></div><div class="content">why no comments? 1 why no comments? 1 print(hello) why no comments?why no comments?why no comments?why no comments?why no comments? why no comments?why no comments? why no comments?</div><div class="post-footer">
-        <a href="/test3/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/test2/">Todo2</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-19">2022-06-19</time></span></div><div class="content">Project2 RaftKV 这一节需要我们实现 Raft，TinyKV Raft 这部分很多都是抄 Etcd 的 Raft 模块。你可以注意到连测试用例都很像。所以这一节我拿到手就会做啊，首先去 Etcd clone 一份源码。我抄的是 Etcd 3.5.1 版本，也就是目前最新版。

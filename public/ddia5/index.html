@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>DDIA-5 - GOOGLC</title><meta name="Description" content="数据密集型系统应用第五章速记"><meta property="og:title" content="DDIA-5" />
+<meta property="og:description" content="数据密集型系统应用第五章速记" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://googlc.github.io/ddia5/" /><meta property="og:image" content="https://googlc.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-19T16:49:51+08:00" />
+<meta property="article:modified_time" content="2020-03-06T21:40:32+08:00" /><meta property="og:site_name" content="GOOGLC" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://googlc.github.io/logo.png"/>
+
+<meta name="twitter:title" content="DDIA-5"/>
+<meta name="twitter:description" content="数据密集型系统应用第五章速记"/>
+<meta name="application-name" content="GOOGLC">
+<meta name="apple-mobile-web-app-title" content="GOOGLC"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://googlc.github.io/ddia5/" /><link rel="prev" href="https://googlc.github.io/test3/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "DDIA-5",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/googlc.github.io\/ddia5\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/googlc.github.io\/images\/Apple-Devices-Preview.png",
+                            "width":  3200 ,
+                            "height":  2048 
+                        }],"genre": "posts","keywords": "ddia, database","wordcount":  123 ,
+        "url": "https:\/\/googlc.github.io\/ddia5\/","datePublished": "2022-09-19T16:49:51+08:00","dateModified": "2020-03-06T21:40:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/googlc.github.io\/images\/avatar.png",
+                    "width":  528 ,
+                    "height":  560 
+                }},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": "数据密集型系统应用第五章速记"
+    }
+    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YLB0V4SWVN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YLB0V4SWVN');
+</script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="GOOGLC"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>GOOGLC</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/googlc/distributed-consensus-reading-list" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ddia5/" selected>English</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="GOOGLC"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>GOOGLC</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/googlc/distributed-consensus-reading-list" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ddia5/" selected>English</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">DDIA-5</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%A6%E4%B9%A0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>分布式学习</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-19">2022-09-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;123 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#有主的复制">有主的复制</a>
+          <ul>
+            <li><a href="#成员变更-新增从节点">成员变更-新增从节点</a></li>
+            <li><a href="#处理节点失效">处理节点失效</a></li>
+          </ul>
+        </li>
+        <li><a href="#复制日志的实现">复制日志的实现</a></li>
+        <li><a href="#复制的延迟问题">复制的延迟问题</a>
+          <ul>
+            <li><a href="#读本节点的写入">读本节点的写入</a></li>
+            <li><a href="#单调读monotonic-reads">单调读（monotonic reads）</a></li>
+            <li><a href="#前缀一致读consistent-prefix-reads">前缀一致读（consistent prefix reads）</a></li>
+            <li><a href="#复制延迟的解决方案">复制延迟的解决方案</a></li>
+          </ul>
+        </li>
+        <li><a href="#多主复制">多主复制</a></li>
+        <li><a href="#无主复制">无主复制</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><blockquote>
+<p>复制意味着在通过网络连接的多台机器上保留相同数据的副本。</p>
+</blockquote>
+<p><strong>复制的动机：</strong></p>
+<ul>
+<li>使数据离用户更近-&gt;减少延迟</li>
+<li>容错-&gt;提高可用性</li>
+<li>横向、纵向扩展方便-&gt;提高吞吐量</li>
+</ul>
+<p><strong>复制的难点：</strong>
+多份数据的一致性-&gt;即数据会变更，如何让多节点数据一致</p>
+<p><strong>复制的方式：</strong></p>
+<ul>
+<li>单主</li>
+<li>无主</li>
+<li>多主</li>
+</ul>
+<p>权衡：使用同步复制还是异步复制？如何处理失败的副本？</p>
+<h3 id="有主的复制">有主的复制</h3>
+<hr>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="img.png"
+        data-srcset="img.png, img.png 1.5x, img.png 2x"
+        data-sizes="auto"
+        alt="img.png"
+        title="img.png" /></p>
+<p><strong>同步复制：</strong>
+数据发送后持久化才返回</p>
+<ul>
+<li>优点：从库能保证有与主库一致的最新数据副本</li>
+<li>缺点： 从库无响应会导致主库无法处理写入</li>
+</ul>
+<blockquote>
+<p>半同步（semi-synchronous:
+一个从库是同步的，而其他的从库则是异步的</p>
+</blockquote>
+<p><strong>异步复制：</strong>
+数据不保证在副本上落盘</p>
+<ul>
+<li>优点：低延迟</li>
+<li>缺点：一致性不强</li>
+</ul>
+<h4 id="成员变更-新增从节点">成员变更-新增从节点</h4>
+<p>流程：</p>
+<ol>
+<li>在某个时刻获取主库的一致性快照（如果可能，不必锁定整个数据库）。大多数数据库都具有这个功能，因为它是备份必需的。对于某些场景，可能需要第三方工具，例如用于 MySQL 的 innobackupex</li>
+<li>将快照复制到新的从库节点。</li>
+<li>1从库连接到主库，并拉取快照之后发生的所有数据变更。这要求快照与主库复制日志中的位置精确关联。该位置有不同的名称，例如 PostgreSQL 将其称为 <strong>日志序列号（log sequence number，LSN）</strong>，MySQL 将其称为 <strong>二进制日志坐标（binlog coordinates）</strong>。</li>
+<li>当从库处理完快照之后积累的数据变更，我们就说它 <strong>赶上（caught up）</strong> 了主库，现在它可以继续及时处理主库产生的数据变化了。</li>
+</ol>
+<h4 id="处理节点失效">处理节点失效</h4>
+<ul>
+<li>
+<p>从库失效-&gt;catch up</p>
+</li>
+<li>
+<p>主库失效-&gt;故障切换</p>
+<ol>
+<li>确认主库失效。</li>
+<li>选一个新的主库</li>
+<li>重新配置系统以启用新的主库</li>
+</ol>
+</li>
+</ul>
+<p><strong>故障切换的难点：</strong></p>
+<ul>
+<li>存在旧主的已提交未提交的数据如何处理？</li>
+<li>新主的数据是否正确</li>
+<li>主库被宣告死亡之前的正确超时应该怎么配置？在主库失效的情况下，超时时间越长意味着恢复时间也越长。但是如果超时设置太短，又可能会出现不必要的故障切换。例如，临时的负载峰值可能导致节点的响应时间增加到超出超时时间，或者网络故障也可能导致数据包延迟。如果系统已经处于高负载或网络问题的困扰之中，那么不必要的故障切换可能会让情况变得更糟糕。</li>
+<li>单主集群出现脑裂，却没有多主集群的冲突处理机制</li>
+</ul>
+<blockquote>
+<p><strong>屏障（fencing）</strong>
+<strong>爆彼之头（Shoot The Other Node In The Head, STONITH）</strong>
+我们将在 “<a href="http://ddia.vonng.com/#/ch8?id=%e9%a2%86%e5%af%bc%e8%80%85%e5%92%8c%e9%94%81" target="_blank" rel="noopener noreffer ">领导者和锁</a>” 中对屏障进行详细讨论。</p>
+</blockquote>
+<p>All in all:
+节点故障、不可靠的网络、对副本一致性、持久性、可用性和延迟的权衡，这些问题实际上是分布式系统中的基本问题。</p>
+<h3 id="复制日志的实现">复制日志的实现</h3>
+<ol>
+<li>基于语句的复制
+<ul>
+<li>注意语句在不同节点的影响</li>
+</ul>
+</li>
+<li>WAL(Write Ahead Log) (==todo==)
+<ul>
+<li>对于日志结构存储引擎（请参阅 “<a href="http://ddia.vonng.com/#/ch3?id=sstables%e5%92%8clsm%e6%a0%91" target="_blank" rel="noopener noreffer ">SSTables 和 LSM 树</a>”），日志是主要的存储位置。日志段在后台压缩，并进行垃圾回收。</li>
+<li>对于覆写单个磁盘块的 <a href="http://ddia.vonng.com/#/ch3?id=b%e6%a0%91" target="_blank" rel="noopener noreffer ">B 树</a>，每次修改都会先写入 <strong>预写式日志</strong>，以便崩溃后索引可以恢复到一个一致的状态。</li>
+</ul>
+</li>
+<li>基于行的日志（逻辑日志复制）
+<ul>
+<li>mysql binlog设置参数后就是基于行</li>
+<li>逻辑日志与存储引擎的内部实现是解耦的，系统可以更容易地做到向后兼容，从而使主库和从库能够运行不同版本的数据库软件，或者甚至不同的存储引擎。</li>
+</ul>
+</li>
+<li>基于触发器的复制
+<ul>
+<li>基于触发器的复制通常比其他复制方法具有更高的开销，并且比数据库内置的复制更容易出错，也有很多限制。</li>
+<li>灵活性不错，</li>
+</ul>
+</li>
+</ol>
+<p>1、2、3由数据库系统实现，4在应用层实现</p>
+<h3 id="复制的延迟问题">复制的延迟问题</h3>
+<p>多节点之间异步复制时造成的不同节点之间的数据不一致。</p>
+<h4 id="读本节点的写入">读本节点的写入</h4>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="img_1.png"
+        data-srcset="img_1.png, img_1.png 1.5x, img_1.png 2x"
+        data-sizes="auto"
+        alt="img_1.png"
+        title="img_1.png" />
+<strong>read-your-writes consistency（写后读一致性）</strong>：如果用户重新加载页面，他们总会看到他们自己提交的任何更新。不对其他用户做出承诺</p>
+<p>有主复制系统如何实现“写后读一致性”？</p>
+<h4 id="单调读monotonic-reads">单调读（monotonic reads）</h4>
+<ul>
+<li>多次读取只会读到比以前新的版本，但不保证为最新版本</li>
+<li>强一致性&lt; mr &lt;最终一致性
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="img_2.png"
+        data-srcset="img_2.png, img_2.png 1.5x, img_2.png 2x"
+        data-sizes="auto"
+        alt="img_2.png"
+        title="img_2.png" /></li>
+</ul>
+<h4 id="前缀一致读consistent-prefix-reads">前缀一致读（consistent prefix reads）</h4>
+<ul>
+<li>按照某个顺序写入数据的写请求，读取时也会按照当时写入的顺序返回。</li>
+<li>顺序错乱通常发生在有分区分片的数据库中</li>
+<li>实现前缀一致性的一种方案是确保任何具有因果顺序关系的写入都交给一个分区来完成，但是该方案实现后效率不高。</li>
+</ul>
+<h4 id="复制延迟的解决方案">复制延迟的解决方案</h4>
+<p>==//todo==
+分布式事务 VS 单机事务</p>
+<h3 id="多主复制">多主复制</h3>
+<p>==//todo//</p>
+<h3 id="无主复制">无主复制</h3>
+<p>==//todo==</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-03-06</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/ddia5/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://googlc.github.io/ddia5/" data-title="DDIA-5" data-hashtags="ddia,database"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://googlc.github.io/ddia5/" data-hashtag="ddia"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://googlc.github.io/ddia5/" data-title="DDIA-5"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://googlc.github.io/ddia5/" data-title="DDIA-5"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://googlc.github.io/ddia5/" data-title="DDIA-5"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ddia/">ddia</a>,&nbsp;<a href="/tags/database/">database</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/test3/" class="prev" rel="prev" title="Test3"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Test3</a></div>
+</div>
+<div id="comments"><div id="giscus" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://giscus.app">Giscus</a>.
+            </noscript></div></article></div>
+            </main>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
+
+</div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"giscus":{"category":"Announcements","categoryId":"DIC_kwDOIBaciM4CRgnK","darkTheme":"dark","emitMetadata":"0","inputPosition":"bottom","lang":"en","lazyLoading":false,"lightTheme":"light","mapping":"pathname","reactionsEnabled":"1","repo":"googlc/googlc.github.io","repoId":"R_kgDOIBaciA"}},"lightgallery":true,"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-YLB0V4SWVN', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-YLB0V4SWVN" async></script></body>
+</html>

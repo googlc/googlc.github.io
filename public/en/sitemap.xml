@@ -2,6 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://googlc.github.io/ddia5/</loc><lastmod>2020-03-06T21:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://googlc.github.io/test3/</loc><lastmod>2022-09-19T16:51:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://googlc.github.io/theme-documentation-basics/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -38,6 +40,17 @@
                     hreflang="en"
                     href="https://googlc.github.io/theme-documentation-bilibili-shortcode/"
                     /></url><url>
+            <loc>https://googlc.github.io/categories/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://googlc.github.io/zh-cn/categories/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://googlc.github.io/categories/"
+                    /></url><url>
+            <loc>https://googlc.github.io/tags/database/</loc><lastmod>2022-09-19T16:51:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://googlc.github.io/tags/ddia/</loc><lastmod>2022-09-19T16:51:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://googlc.github.io/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -56,18 +69,18 @@
                     hreflang="en"
                     href="https://googlc.github.io/posts/"
                     /></url><url>
-            <loc>https://googlc.github.io/test3/</loc><lastmod>2022-09-19T16:51:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://googlc.github.io/test2/</loc><lastmod>2022-09-19T15:26:42&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://googlc.github.io/tinykv_white_paper/</loc><lastmod>2022-09-19T15:26:42&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://googlc.github.io/categories/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://googlc.github.io/tags/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/categories/"
+                        href="https://googlc.github.io/zh-cn/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://googlc.github.io/categories/"
+                    href="https://googlc.github.io/tags/"
                     /></url><url>
+            <loc>https://googlc.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%A6%E4%B9%A0/</loc><lastmod>2022-09-19T16:51:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://googlc.github.io/test2/</loc><lastmod>2022-09-19T15:26:42&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://googlc.github.io/tinykv_white_paper/</loc><lastmod>2022-09-19T15:26:42&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://googlc.github.io/tags/configuration/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -85,15 +98,6 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://googlc.github.io/tags/installation/"
-                    /></url><url>
-            <loc>https://googlc.github.io/tags/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://googlc.github.io/zh-cn/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://googlc.github.io/tags/"
                     /></url><url>
             <loc>https://googlc.github.io/tags/shortcodes/</loc><lastmod>2022-09-20T15:20:06&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"

@@ -4,6 +4,35 @@
         <link>https://googlc.github.io/posts/</link>
         <description>All Posts | GOOGLC</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Sep 2022 16:49:51 &#43;0800</lastBuildDate><atom:link href="https://googlc.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>DDIA-5</title>
+    <link>https://googlc.github.io/ddia5/</link>
+    <pubDate>Mon, 19 Sep 2022 16:49:51 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://googlc.github.io/ddia5/</guid>
+    <description><![CDATA[复制意味着在通过网络连接的多台机器上保留相同数据的副本。
+复制的动机：
+使数据离用户更近-&gt;减少延迟 容错-&gt;提高可用性 横向、纵向扩展方便-&gt;提高吞吐量 复制的难点： 多份数据的一致性-&gt;即数据会变更，如何让多节点数据一致
+复制的方式：
+单主 无主 多主 权衡：使用同步复制还是异步复制？如何处理失败的副本？
+有主的复制 同步复制： 数据发送后持久化才返回
+优点：从库能保证有与主库一致的最新数据副本 缺点： 从库无响应会导致主库无法处理写入 半同步（semi-synchronous: 一个从库是同步的，而其他的从库则是异步的
+异步复制： 数据不保证在副本上落盘
+优点：低延迟 缺点：一致性不强 成员变更-新增从节点 流程：
+在某个时刻获取主库的一致性快照（如果可能，不必锁定整个数据库）。大多数数据库都具有这个功能，因为它是备份必需的。对于某些场景，可能需要第三方工具，例如用于 MySQL 的 innobackupex 将快照复制到新的从库节点。 1从库连接到主库，并拉取快照之后发生的所有数据变更。这要求快照与主库复制日志中的位置精确关联。该位置有不同的名称，例如 PostgreSQL 将其称为 日志序列号（log sequence number，LSN），MySQL 将其称为 二进制日志坐标（binlog coordinates）。 当从库处理完快照之后积累的数据变更，我们就说它 赶上（caught up） 了主库，现在它可以继续及时处理主库产生的数据变化了。 处理节点失效 从库失效-&gt;catch up
+主库失效-&gt;故障切换
+确认主库失效。 选一个新的主库 重新配置系统以启用新的主库 故障切换的难点：
+存在旧主的已提交未提交的数据如何处理？ 新主的数据是否正确 主库被宣告死亡之前的正确超时应该怎么配置？在主库失效的情况下，超时时间越长意味着恢复时间也越长。但是如果超时设置太短，又可能会出现不必要的故障切换。例如，临时的负载峰值可能导致节点的响应时间增加到超出超时时间，或者网络故障也可能导致数据包延迟。如果系统已经处于高负载或网络问题的困扰之中，那么不必要的故障切换可能会让情况变得更糟糕。 单主集群出现脑裂，却没有多主集群的冲突处理机制 屏障（fencing） 爆彼之头（Shoot The Other Node In The Head, STONITH） 我们将在 “领导者和锁” 中对屏障进行详细讨论。
+All in all: 节点故障、不可靠的网络、对副本一致性、持久性、可用性和延迟的权衡，这些问题实际上是分布式系统中的基本问题。]]></description>
+</item>
+<item>
+    <title>Test3</title>
+    <link>https://googlc.github.io/test3/</link>
+    <pubDate>Mon, 19 Sep 2022 16:49:51 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>https://googlc.github.io/test3/</guid>
+    <description><![CDATA[why no comments? 1 why no comments? 1 print(hello) why no comments?why no comments?why no comments?why no comments?why no comments? why no comments?why no comments? why no comments?]]></description>
+</item>
+<item>
     <title>Theme Documentation - Basics</title>
     <link>https://googlc.github.io/theme-documentation-basics/</link>
     <pubDate>Fri, 06 Mar 2020 21:29:01 &#43;0800</pubDate>
@@ -35,14 +64,6 @@
     <guid>https://googlc.github.io/theme-documentation-bilibili-shortcode/</guid>
     <description><![CDATA[<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"></a>
 <p>The <code>bilibili</code> shortcode embeds a responsive video player for bilibili videos.</p>]]></description>
-</item>
-<item>
-    <title>Test3</title>
-    <link>https://googlc.github.io/test3/</link>
-    <pubDate>Mon, 19 Sep 2022 16:49:51 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://googlc.github.io/test3/</guid>
-    <description><![CDATA[why no comments? 1 why no comments? 1 print(hello) why no comments?why no comments?why no comments?why no comments?why no comments? why no comments?why no comments? why no comments?]]></description>
 </item>
 <item>
     <title>Todo2</title>
